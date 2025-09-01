@@ -1,0 +1,16 @@
+Metadata-Version: 2.4
+Name: Libardo_Delavega
+Version: 0.0.1
+Author: Libardo_Delavega
+Author-email: libardo.delavega@est.iudigital.edu.co
+Requires-Dist: kagglehub[pandas-datasets]>=0.3.8
+Requires-Dist: matplotlib>=3.5.0
+Requires-Dist: seaborn>=0.11.2
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: openpyxl
+Requires-Dist: requests
+Dynamic: author
+Dynamic: author-email
+Dynamic: requires-dist

@@ -1,0 +1,7 @@
+README.md
+setup.py
+Libardo_Delavega.egg-info/PKG-INFO
+Libardo_Delavega.egg-info/SOURCES.txt
+Libardo_Delavega.egg-info/dependency_links.txt
+Libardo_Delavega.egg-info/requires.txt
+Libardo_Delavega.egg-info/top_level.txt
