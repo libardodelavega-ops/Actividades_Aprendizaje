@@ -8,13 +8,14 @@ from collections import Counter
 class ProcesadorDatos:
     def __init__(
         self,
-        ruta_in="/workspaces/Actividades_Aprendizaje/datos_in.txt",
-        ruta_out="/workspaces/Actividades_Aprendizaje/datos_out.txt",
-        ruta_img="/workspaces/Actividades_Aprendizaje/grafico_out.jpg"
+        ruta_in="datos_in.txt",
+        ruta_out="datos_out.txt",
+        ruta_img="grafico_out.jpg"
     ):
-        self.ruta_in = ruta_in
-        self.ruta_out = ruta_out
-        self.ruta_img = ruta_img
+        base_dir = os.path.dirname(os.path.abspath(__file__))  # carpeta donde está este .py
+        self.ruta_in = os.path.join(base_dir, ruta_in)
+        self.ruta_out = os.path.join(base_dir, ruta_out)
+        self.ruta_img = os.path.join(base_dir, ruta_img)
 
         self.n = None
         self.cc_uno = None
