@@ -32,7 +32,7 @@ jobs:
       - name: Step 5 - Ensure input file
         run: |
           if (-not (Test-Path -Path "datos_in.txt")) {
-            "90 1073995112 0" | Out-File -Encoding utf8 datos_in.txt
+            "102 1073995112 0" | Out-File -Encoding utf8 datos_in.txt
           }
         shell: pwsh
 
