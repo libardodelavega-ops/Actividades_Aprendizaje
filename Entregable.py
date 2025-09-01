@@ -1,6 +1,4 @@
-# ...existing code...
 import os
-
 import random
 import matplotlib.pyplot as plt
 from collections import Counter
@@ -25,8 +23,11 @@ class ProcesadorDatos:
 
     # 1) Leer archivo de entrada
     def leer_datos_entrada(self):
+        # *** CORRECCIÓN: Crear el archivo de entrada si no existe ***
         if not os.path.exists(self.ruta_in):
-            raise FileNotFoundError("No se encontró el archivo: " + self.ruta_in)
+            print(f"El archivo '{self.ruta_in}' no existe. Creando uno predeterminado...")
+            with open(self.ruta_in, "w", encoding="utf-8") as f:
+                f.write("123 1073995112 0\n") # Valores predeterminados para n, cc_uno, cc_dos
 
         with open(self.ruta_in, "r", encoding="utf-8") as f:
             contenido = f.read().strip()
@@ -112,4 +113,3 @@ if __name__ == "__main__":
     print("Paso 1:", proc.leer_datos_entrada())
     print("Paso 2:", proc.generar_datos())
     print("Paso 3:", proc.leer_y_graficar())
-# ...existing code...
