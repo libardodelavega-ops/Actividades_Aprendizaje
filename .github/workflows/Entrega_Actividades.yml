@@ -37,10 +37,10 @@ jobs:
         shell: pwsh
 
       - name: Step 6 - Run Entregable_1.py
-        run: python entregable_uno.py
+        run: python Entregable_1.py
         shell: pwsh
 
-      - name: Step 7 - Validate
+      - name: Step 7 - Validar Resultado
         run: |
           $out = python validador_1.py
           Write-Host $out
