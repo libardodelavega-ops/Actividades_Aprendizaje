@@ -2,12 +2,12 @@
 from setuptools import setup,find_packages
 
 setup (
-    name= "nini_guitierrez",
+    name= "Libardo_Delavega",
     version= "0.0.1",
-    author= "Nini gutierrez",
-    author_email= "nini.gutierrez@est.iudigital.edu.co",
+    author= "Libardo_Delavega",
+    author_email= "libardo.delavega@est.iudigital.edu.co",
     description= "",
-    py_modules= ["actividad_1 y 2"],
+    py_modules= ["actividad_1"],
     install_requires= [
        "kagglehub[pandas-datasets]>=0.3.8",
         "matplotlib>=3.5.0",
